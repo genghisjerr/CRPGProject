@@ -16,7 +16,7 @@ namespace CRPGProject
         static void Main(string[] args)
         {
             GameEngine.Initialize();
-            _player.Name = "Anonymous";
+            _player.Name = "Anonymous jerr the joh";
 
             
             Console.ReadLine();
