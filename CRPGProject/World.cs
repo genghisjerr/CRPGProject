@@ -22,9 +22,22 @@ namespace CRPGProject
 
         private static void PopulateLocations()
         {
+            //create location
             Location home = new Location(LOCATION_ID_HOME, "Home", "this is your house???");
             Location forestPath = new Location(LOCATION_ID_FOREST_PATH, "Forest Path", "a path in the middle of the woods");
             Location lab = new Location(LOCATION_ID_LAB, "Lab", "a secret laboratory. ooohhhh");
+
+            //link locations
+            home.LocationToNorth = forestPath;
+            forestPath.LocationToEast = lab;
+            lab.LocationToWest = forestPath;
+            forestPath.LocationToSouth = home;
+
+            //Create list locations
+            Locations.Add(home);
+            Locations.Add(forestPath);
+            Locations.Add(lab);
+
         }
 
     }
