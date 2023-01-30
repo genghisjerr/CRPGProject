@@ -15,6 +15,8 @@ namespace CRPGProject
             Console.WriteLine("Initializing Game Engine Version {0}", Version);
             Console.WriteLine("/n/nWelcome to the {0}", World.WorldName);
             Console.WriteLine();
+            World.ListLocations();
+
         }
 
     }
